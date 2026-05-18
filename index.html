@@ -244,7 +244,7 @@
         var counterEl = document.getElementById('site-counter-value');
         if (!counterEl) return;
 
-        var endpoint = 'https://api.countapi.xyz/hit/taskpuppykreations.org/homepage';
+        var endpoint = 'https://api.counterapi.dev/v1/taskpuppykreations/homepage/up';
 
         fetch(endpoint)
             .then(function (response) {
@@ -254,8 +254,8 @@
                 return response.json();
             })
             .then(function (data) {
-                if (typeof data.value === 'number') {
-                    counterEl.textContent = data.value.toLocaleString();
+                if (typeof data.count === 'number') {
+                    counterEl.textContent = data.count.toLocaleString();
                 } else {
                     counterEl.textContent = 'N/A';
                 }
