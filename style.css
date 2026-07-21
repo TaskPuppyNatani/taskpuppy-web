@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 20px;
     /* Paw Trail Background preserved from your bio app */
-    background-image: url('assets/paws.png');
+    background-image: url('assets/images/branding/paws.png');
     background-size: 400px;
     background-repeat: repeat;
 }
