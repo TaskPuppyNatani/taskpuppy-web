@@ -39,6 +39,11 @@ body > * {
     z-index: 1;
 }
 
+h1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 40px;
+}
+
 .profile-frame {
     width: 100px;
     height: 100px;
@@ -54,6 +59,24 @@ body > * {
     padding: 15px;
     border-radius: 12px;
     text-align: center;
+    color:#00FF66
+}
+
+.card p {
+    color:#00FF66;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.card h2 {
+    color:#9f15df;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.card .highlight {
+    color: #9f15df;
 }
 
 .stat-val {
@@ -62,16 +85,6 @@ body > * {
     color: var(--cyan);
 }
 
-.merchant-btn {
-    width: 100%;
-    background: var(--purple);
-    color: #000;
-    padding: 20px;
-    border-radius: 12px;
-    font-weight: 900;
-    border: none;
-    cursor: pointer;
-}
 
 /* ===========================
    Navigation
@@ -200,7 +213,7 @@ body > * {
     color: #00FF66;
     max-width: 600px;
     margin: 0 auto 40px;
-    font-size: 0.95rem;
+    font-size: .95rem;
     line-height: 1.6;
 }
 
@@ -209,9 +222,10 @@ body > * {
 }
 
 .project-group-title {
-    color: var(--purple);
-    font-size: 1.1rem;
+    color:#9f15df;
+    font-size: 1.25rem;
     text-transform: uppercase;
+    font-family:"Comic Sans MS", "Comic Sans", cursive;
     letter-spacing: 1px;
     border-bottom: 2px solid rgba(0, 255, 102, 0.3);
     padding-bottom: 8px;
@@ -244,18 +258,21 @@ body > * {
 }
 
 .project-card-title {
-    color: var(--cyan);
-    font-size: 1.1rem;
+    color:#9f15df;
+    font-size: 1.25rem;
+    font-family:"Comic Sans MS", "Comic Sans", cursive;
     margin: 0 0 8px 0;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    font-weight: bold;
 }
 
 .project-card-desc {
     color: var(--text-main);
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     line-height: 1.6;
     margin-bottom: 14px;
+    color: #00FF66;
 }
 
 /* Status badges */
