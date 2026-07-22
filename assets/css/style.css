@@ -659,3 +659,210 @@ h1 {
         gap: 10px;
     }
 }
+
+/* Uses and Links pages */
+
+.uses-page,
+.links-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 20px 60px;
+    text-align: center;
+}
+
+.uses-header,
+.links-header {
+    max-width: 640px;
+    margin: 0 auto 40px;
+}
+
+.uses-page h1,
+.links-page h1 {
+    color: #00FF66;
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+}
+
+.uses-intro,
+.links-intro {
+    color: #00FF66;
+    margin: 0 auto;
+    font-size: .95rem;
+    line-height: 1.6;
+}
+
+.uses-grid,
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    align-items: stretch;
+    text-align: left;
+}
+
+.uses-card,
+.links-card {
+    background: var(--card-bg);
+    border: 1px solid #333;
+    border-radius: 16px;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.uses-card:hover,
+.uses-card:focus-within,
+.links-card:hover,
+.links-card:focus-within {
+    box-shadow: 0 0 15px rgba(0, 255, 102, 0.2);
+    transform: translateY(-2px);
+}
+
+.uses-card-title,
+.links-card-title {
+    color: #9f15df;
+    font-size: 1.1rem;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.uses-card-description,
+.links-card-description {
+    color: #00FF66;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 14px;
+}
+
+.uses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.uses-chip {
+    display: inline-block;
+    margin: 0;
+    padding: 6px 12px;
+    color: #00FF66;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #444;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.links-section {
+    margin-bottom: 48px;
+}
+
+.links-section-title {
+    color: #9f15df;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    letter-spacing: 1px;
+    border-bottom: 2px solid rgba(0, 255, 102, 0.3);
+    padding-bottom: 8px;
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+.links-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 190px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.links-card:focus-visible {
+    outline: 2px solid #00FF66;
+    outline-offset: 3px;
+}
+
+.links-category {
+    align-self: flex-start;
+    color: #9f15df;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.links-external {
+    display: inline-block;
+    margin-top: auto;
+    color: #00FF66;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    .uses-page,
+    .links-page {
+        padding: 16px 16px 48px;
+    }
+
+    .uses-header,
+    .links-header {
+        margin-bottom: 28px;
+    }
+
+    .uses-page h1,
+    .links-page h1 {
+        font-size: 1.3rem;
+    }
+
+    .uses-intro,
+    .links-intro {
+        font-size: 0.88rem;
+    }
+
+    .uses-grid,
+    .links-grid {
+        gap: 16px;
+    }
+
+    .uses-card,
+    .links-card {
+        padding: 16px;
+    }
+
+    .uses-card-title,
+    .links-card-title {
+        font-size: 1rem;
+    }
+
+    .uses-card-description,
+    .links-card-description {
+        font-size: 0.85rem;
+    }
+
+    .uses-chip {
+        font-size: 0.75rem;
+    }
+
+    .links-section {
+        margin-bottom: 36px;
+    }
+
+    .links-section-title {
+        font-size: 0.95rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .uses-card,
+    .links-card {
+        transition: none;
+    }
+}

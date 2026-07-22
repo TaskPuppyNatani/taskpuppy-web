@@ -30,7 +30,6 @@ This site serves as a live demonstration of my optimal working environment and t
 
 ## 🔗 Connected Nodes
 - **AuDherapy:** 🌐 [audherapy.org](https://audherapy.org)
-- **Merchant Hunt:** 🏹 [Project Directory](https://technovixen-natani.github.io/merchant-hunt/)
 - **Identity:** ⚧ [Pronoun Page](https://en.pronouns.page/@natanilombax)
 - **Support:** ☕ [Ko-fi](https://ko-fi.com/taskpuppyloona)
 
