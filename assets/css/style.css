@@ -85,6 +85,24 @@ h1 {
     color: var(--cyan);
 }
 
+/* ===========================
+   Cursor
+   =========================== */
+
+html,
+body * {
+    cursor: url("../cursor/pawbeans-cursor-purple.png"), auto;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+label,
+[role="button"] {
+    cursor: url("../cursor/pawbeans-cursor-purple-click.png"), pointer;
+}
 
 /* ===========================
    Navigation
