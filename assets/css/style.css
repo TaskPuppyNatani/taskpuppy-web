@@ -984,3 +984,16 @@ label,
         transition: none;
     }
 }
+
+/* Remove the box around the Ko-fi floating button */
+.floatingchat-container-wrap,
+.floatingchat-container-wrap-mobi,
+.floatingchat-container-wrap iframe,
+.floatingchat-container-wrap-mobi iframe,
+iframe[id^="kofi-wo-container"] {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
