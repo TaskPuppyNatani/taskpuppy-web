@@ -884,3 +884,104 @@ label,
         transition: none;
     }
 }
+
+/* Custom 404 page */
+.error-404-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 20px 20px 60px;
+    text-align: center;
+}
+
+.error-404-card {
+    margin: 0;
+    padding: 24px;
+    background: var(--card-bg);
+    border: 1px solid #333;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.error-404-page h1 {
+    margin: 0 0 20px;
+    color: #00FF66;
+    font-size: 1.6rem;
+}
+
+.error-404-image {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 auto 24px;
+    border: 2px solid #9f15df;
+    border-radius: 16px;
+    box-shadow:
+        0 0 15px rgba(159, 21, 223, 0.3),
+        0 0 18px rgba(0, 255, 102, 0.12);
+}
+
+.error-404-message {
+    margin: 0 auto 20px;
+    color: #00FF66;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.error-404-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.error-404-link {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid #00FF66;
+    border-radius: 12px;
+    background: var(--card-bg);
+    color: #00FF66;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.error-404-link:hover,
+.error-404-link:focus-visible {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 700px) {
+    .error-404-page {
+        padding: 16px 16px 48px;
+    }
+
+    .error-404-card {
+        padding: 16px;
+    }
+
+    .error-404-page h1 {
+        font-size: 1.3rem;
+    }
+
+    .error-404-message {
+        font-size: 0.9rem;
+    }
+
+    .error-404-link {
+        padding: 10px 14px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .error-404-link {
+        transition: none;
+    }
+}
