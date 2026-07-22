@@ -887,9 +887,11 @@ label,
 
 /* Custom 404 page */
 .error-404-page {
-    max-width: 760px;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
     margin: 0 auto;
-    padding: 20px 20px 60px;
+    padding: 20px clamp(12px, 3vw, 40px) 60px;
     text-align: center;
 }
 
@@ -899,6 +901,7 @@ label,
     background: var(--card-bg);
     border: 1px solid #333;
     border-radius: 16px;
+    color: var(--text-main);
     text-align: center;
 }
 
@@ -910,8 +913,8 @@ label,
 
 .error-404-image {
     display: block;
-    width: 100%;
-    max-width: 640px;
+    width: min(92vw, 1100px);
+    max-width: 100%;
     height: auto;
     box-sizing: border-box;
     margin: 0 auto 24px;
@@ -958,10 +961,6 @@ label,
 }
 
 @media (max-width: 700px) {
-    .error-404-page {
-        padding: 16px 16px 48px;
-    }
-
     .error-404-card {
         padding: 16px;
     }
